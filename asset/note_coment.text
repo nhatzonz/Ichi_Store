@@ -1,0 +1,57 @@
+<div class="contain__item">
+                            <div class="contain__item-img">
+                                <img src="./asset/img/collection.img/productex4.png" alt="">
+                                <p class="add-cart">Thêm vào giỏ hàng</p>
+                                <p class="buy-now">Mua ngay</p>
+                            </div>
+                            <div class="contain__item-option">
+                                <div class="option__color">
+                                    <input type="radio" class="color" name="color" id="color1">
+                                    <input type="radio" class="color" name="color" id="color2">
+                                    <input type="radio" class="color" name="color" id="color3">
+                                    <input type="radio" class="color" name="color" id="color4">
+                                </div>
+                                <div class="option__name">
+                                    Đầm Liner Dáng Maxi
+                                </div>
+                                <div class="option__price">860.000 đ</div>
+                            </div>
+                        </div>
+                        <div class="contain__item">
+                            <div class="contain__item-img">
+                                <img src="./asset/img/collection.img/productex4.png" alt="">
+                                <p class="add-cart">Thêm vào giỏ hàng</p>
+                                <p class="buy-now">Mua ngay</p>
+                            </div>
+                            <div class="contain__item-option">
+                                <div class="option__color">
+                                    <input type="radio" class="color" name="color" id="color1">
+                                    <input type="radio" class="color" name="color" id="color2">
+                                    <input type="radio" class="color" name="color" id="color3">
+                                    <input type="radio" class="color" name="color" id="color4">
+                                </div>
+                                <div class="option__name">
+                                    Đầm Liner Dáng Maxi
+                                </div>
+                                <div class="option__price">860.000 đ</div>
+                            </div>
+                        </div>
+                        <div class="contain__item">
+                            <div class="contain__item-img">
+                                <img src="./asset/img/collection.img/productex4.png" alt="">
+                                <p class="add-cart">Thêm vào giỏ hàng</p>
+                                <p class="buy-now">Mua ngay</p>
+                            </div>
+                            <div class="contain__item-option">
+                                <div class="option__color">
+                                    <input type="radio" class="color" name="color" id="color1">
+                                    <input type="radio" class="color" name="color" id="color2">
+                                    <input type="radio" class="color" name="color" id="color3">
+                                    <input type="radio" class="color" name="color" id="color4">
+                                </div>
+                                <div class="option__name">
+                                    Đầm Liner Dáng Maxi
+                                </div>
+                                <div class="option__price">860.000 đ</div>
+                            </div>
+                        </div>

@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICHI store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./asset/css/base.css">
+    <link rel="stylesheet" href="./asset/css/main.css">
+    <link rel="stylesheet" href="./asset/css/modal.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400, 500, 700display=swapsubset=vietnamese" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div>
+        <header class="header">
+            <div class="navbar">
+                <div class="navbar__logo ">
+                    <img src="./asset/img/ichi header.png" alt="" class="navbar__img">
+                </div>
+                <ul class="navbar__list ">
+                    <li class="navbar__item">
+                       <div class="navbar__item-text ">
+                        Trang Chủ
+                       </div>
+                        <div class="navbar__item--hover js__content-main">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="22" viewBox="0 0 64 22" fill="none">
+                                <path d="M34.8985 1C18.1553 2.70007 -3.52742 8.05531 1.8304 15.8756C8.52768 25.6511 65.0362 19.6983 62.9433 12.473C60.8504 5.2477 34.4801 1.84755 25.69 7.79781" stroke="#D03E3E" stroke-width="2" stroke-linecap="round"/>
+                              </svg>
+                        </div>
+                    </li>
+                    <li class="navbar__item">
+                        <div class="navbar__item-text">
+                            Áo
+                        </div>
+                        <div class="navbar__item--hover">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="22" viewBox="0 0 64 22" fill="none">
+                                <path d="M34.8985 1C18.1553 2.70007 -3.52742 8.05531 1.8304 15.8756C8.52768 25.6511 65.0362 19.6983 62.9433 12.473C60.8504 5.2477 34.4801 1.84755 25.69 7.79781" stroke="#D03E3E" stroke-width="2" stroke-linecap="round"/>
+                              </svg>
+                        </div>
+                    </li>
+                    <li class="navbar__item">
+                        <div class="navbar__item-text">
+                            Quần
+                        </div>
+                        <div class="navbar__item--hover">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="22" viewBox="0 0 64 22" fill="none">
+                                <path d="M34.8985 1C18.1553 2.70007 -3.52742 8.05531 1.8304 15.8756C8.52768 25.6511 65.0362 19.6983 62.9433 12.473C60.8504 5.2477 34.4801 1.84755 25.69 7.79781" stroke="#D03E3E" stroke-width="2" stroke-linecap="round"/>
+                              </svg>
+                        </div>
+                    </li>
+                    <li class="navbar__item">
+                        <div class="navbar__item-text">
+                            Bộ Sưu Tập
+                        </div>
+                        <div class="navbar__item--hover">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="22" viewBox="0 0 64 22" fill="none">
+                                <path d="M34.8985 1C18.1553 2.70007 -3.52742 8.05531 1.8304 15.8756C8.52768 25.6511 65.0362 19.6983 62.9433 12.473C60.8504 5.2477 34.4801 1.84755 25.69 7.79781" stroke="#D03E3E" stroke-width="2" stroke-linecap="round"/>
+                              </svg>
+                        </div>
+                    </li>
+                    <li class="navbar__item">
+                        <div class="navbar__item-text">
+                            Giảm Giá
+                        </div>
+                        <div class="navbar__item--hover">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="22" viewBox="0 0 64 22" fill="none">
+                                <path d="M34.8985 1C18.1553 2.70007 -3.52742 8.05531 1.8304 15.8756C8.52768 25.6511 65.0362 19.6983 62.9433 12.473C60.8504 5.2477 34.4801 1.84755 25.69 7.79781" stroke="#D03E3E" stroke-width="2" stroke-linecap="round"/>
+                              </svg>
+                        </div>
+                    </li>
+                </ul>
+                <div class="navbar__list ">
+                    <li class="navbar__item navbar__item-icon js-search--off">
+                        <svg class="btn-search--begin" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M17.5984 15.4778H16.4863L16.0922 15.0979C16.9719 14.0765 17.6149 12.8733 17.9751 11.5745C18.3352 10.2758 18.4037 8.91346 18.1756 7.58515C17.514 3.674 14.2481 0.550711 10.3065 0.0723698C8.92075 -0.102836 7.51328 0.041097 6.19177 0.493154C4.87026 0.945211 3.66974 1.69341 2.68207 2.6805C1.6944 3.66759 0.945766 4.86741 0.493443 6.18814C0.0411211 7.50888 -0.102896 8.91552 0.0724122 10.3004C0.551034 14.2397 3.67616 17.5037 7.5896 18.1649C8.91869 18.3929 10.2818 18.3245 11.5813 17.9645C12.8809 17.6046 14.0847 16.962 15.1068 16.0827L15.4869 16.4767V17.5881L21.4696 23.5674C22.0468 24.1442 22.99 24.1442 23.5671 23.5674C24.1443 22.9906 24.1443 22.0479 23.5671 21.4711L17.5984 15.4778ZM9.15216 15.4778C5.64695 15.4778 2.81745 12.6499 2.81745 9.14679C2.81745 5.64364 5.64695 2.8158 9.15216 2.8158C12.6574 2.8158 15.4869 5.64364 15.4869 9.14679C15.4869 12.6499 12.6574 15.4778 9.15216 15.4778Z" fill="#202222"/>
+                        </svg>
+                        
+                    </li>
+                    <li class="navbar__item navbar__item-icon js-search--on">
+                        <svg class="btn-search--after" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M17.5984 15.4778H16.4863L16.0922 15.0979C16.9719 14.0765 17.6149 12.8733 17.9751 11.5745C18.3352 10.2758 18.4037 8.91346 18.1756 7.58515C17.514 3.674 14.2481 0.550711 10.3065 0.0723698C8.92075 -0.102836 7.51328 0.041097 6.19177 0.493154C4.87026 0.945211 3.66974 1.69341 2.68207 2.6805C1.6944 3.66759 0.945766 4.86741 0.493443 6.18814C0.0411211 7.50888 -0.102896 8.91552 0.0724122 10.3004C0.551034 14.2397 3.67616 17.5037 7.5896 18.1649C8.91869 18.3929 10.2818 18.3245 11.5813 17.9645C12.8809 17.6046 14.0847 16.962 15.1068 16.0827L15.4869 16.4767V17.5881L21.4696 23.5674C22.0468 24.1442 22.99 24.1442 23.5671 23.5674C24.1443 22.9906 24.1443 22.0479 23.5671 21.4711L17.5984 15.4778ZM9.15216 15.4778C5.64695 15.4778 2.81745 12.6499 2.81745 9.14679C2.81745 5.64364 5.64695 2.8158 9.15216 2.8158C12.6574 2.8158 15.4869 5.64364 15.4869 9.14679C15.4869 12.6499 12.6574 15.4778 9.15216 15.4778Z" fill="#202222"/>
+                        </svg>
+                        <p class="btn-search__describe"> Tìm kiếm</p>
+                        <svg class="btn-close" xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16" fill="none">
+                            <path d="M1.52228 0C1.82303 0 2.10781 0.135354 2.29771 0.36856L7.36602 6.59257C7.39883 6.63286 7.44804 6.65625 7.5 6.65625C7.55197 6.65625 7.60117 6.63286 7.63398 6.59257L12.7023 0.36856C12.8922 0.135354 13.177 0 13.4777 0H13.8763C14.7222 0 15.186 0.984949 14.6472 1.63702L9.91532 7.36298C9.60978 7.7327 9.60978 8.26729 9.91532 8.63702L14.6472 14.363C15.186 15.015 14.7223 16 13.8763 16H13.472C13.1745 16 12.8925 15.8675 12.7025 15.6386L7.63457 9.53195C7.60135 9.49191 7.55203 9.46875 7.5 9.46875C7.44798 9.46875 7.39865 9.49191 7.36543 9.53195L2.29749 15.6386C2.10751 15.8675 1.82546 16 1.52797 16H1.15737C0.305798 16 -0.156085 15.0035 0.394271 14.3537L5.22801 8.64628C5.54388 8.27332 5.54388 7.72668 5.22801 7.35372L0.394271 1.64628C-0.156085 0.996452 0.305797 0 1.15737 0H1.52228Z" fill="#202222"/>
+                            </svg>
+                    </li>
+                    <li class="navbar__item navbar__item-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <g clip-path="url(#clip0_2006_5825)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.596743 0.987927C0.223336 1.18504 0.0286644 1.64549 0.141071 2.06577C0.238477 2.42994 0.464368 2.58758 1.7089 3.15993C2.69341 3.61269 2.8287 3.68811 2.88602 3.81618C2.9217 3.89577 3.4797 6.28119 4.12606 9.11713C4.77241 11.9531 5.34363 14.4308 5.39543 14.6233C5.61991 15.4578 6.16704 16.0682 6.96087 16.3697L7.24212 16.4765L13.4966 16.4891C17.6331 16.4974 19.8394 16.4853 20.0122 16.4534C20.8284 16.3028 21.5536 15.6787 21.8372 14.8828C21.8923 14.7281 22.3734 12.7347 22.9062 10.4531C23.8076 6.59268 23.8749 6.27369 23.8749 5.85932C23.8748 5.51976 23.8498 5.34163 23.7697 5.10932C23.5172 4.37779 22.958 3.81693 22.2187 3.55372L21.914 3.44526H14.5938H7.27362L7.07079 3.58785C6.76109 3.80549 6.64924 4.03368 6.6672 4.4113C6.68402 4.76455 6.79577 4.97226 7.07037 5.16041L7.23523 5.27338L14.434 5.29682C21.2006 5.31885 21.64 5.32518 21.7539 5.40262C21.8692 5.48094 21.9427 5.59227 22.0031 5.78019C22.0182 5.82693 21.5883 7.76657 21.0478 10.0904C20.1017 14.1584 20.0598 14.3211 19.9223 14.4586L19.7794 14.6015L13.7217 14.6137C7.8783 14.6255 7.65818 14.6227 7.49993 14.5381C7.38452 14.4763 7.31206 14.3893 7.25552 14.2446C7.21132 14.1315 6.62496 11.6238 5.95259 8.67182C4.97421 4.37671 4.70079 3.24379 4.5837 2.99994C4.48502 2.79449 4.32926 2.58763 4.10538 2.36474C3.78045 2.04125 3.74707 2.02199 2.54159 1.4624C1.41016 0.937161 1.28791 0.890755 1.04159 0.89263C0.867727 0.893989 0.711258 0.927505 0.596743 0.987927ZM9.1594 18.3739C8.6268 18.454 8.18538 18.6759 7.80827 19.053C7.40918 19.4521 7.2064 19.8627 7.12512 20.4364C6.97568 21.491 7.61562 22.5649 8.63407 22.9687C8.89413 23.0718 9.0004 23.0859 9.51921 23.0859H10.1088L10.5036 22.8898C10.9849 22.6508 11.3651 22.288 11.5951 21.8483C11.8119 21.4339 11.8646 21.2126 11.8638 20.7201C11.863 20.2032 11.7482 19.8312 11.4559 19.398C10.9481 18.6454 10.0417 18.2412 9.1594 18.3739ZM17.427 18.3779C16.5318 18.5121 15.7625 19.2009 15.4966 20.1061C15.4551 20.2473 15.4218 20.5306 15.4218 20.7421C15.4218 21.415 15.636 21.927 16.1201 22.411C16.6105 22.9014 17.1143 23.1093 17.8124 23.1093C18.4377 23.1093 18.8699 22.9504 19.3688 22.5369C19.7941 22.1846 20.1142 21.5604 20.1844 20.947C20.2488 20.3851 19.9989 19.6294 19.5948 19.1635C19.0861 18.5769 18.2121 18.2602 17.427 18.3779ZM9.11712 19.9414C8.94241 20.0194 8.74066 20.231 8.6748 20.4053C8.59952 20.6046 8.61504 20.9568 8.70706 21.1372C8.7521 21.2256 8.86887 21.3618 8.96651 21.4398C9.19868 21.6253 9.63457 21.6657 9.88938 21.5252C10.2514 21.3256 10.4207 20.9435 10.3393 20.5097C10.301 20.3057 10.064 20.0245 9.85765 19.9383C9.66588 19.8582 9.30012 19.8597 9.11712 19.9414ZM17.4141 19.9488C16.9857 20.1722 16.8109 20.6436 16.9939 21.0818C17.0869 21.3044 17.1856 21.4109 17.4004 21.5205C17.9816 21.8172 18.6696 21.3946 18.6696 20.741C18.6696 20.4037 18.4833 20.1006 18.1781 19.9411C18.0098 19.8532 17.5893 19.8574 17.4141 19.9488Z" fill="#202222"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_2006_5825">
+                            <rect width="24" height="24" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                    </li>
+                    <li class="navbar__item js__register-btn">
+                        Đăng ký
+                        
+                    </li>
+                    <li class="navbar__item navbar__item-btn js__login-btn">
+                        <span class="separate"></span>
+                        Đăng nhập  
+                    </li>
+                    
+                </div>
+            </div>
+        </header>
+        <div class="content content__main ">
+            <div class="slider slider__top">
+                <div class="list-imgs">
+                    <img class="list-img__main" src="../asset/img/slider 1.png" alt="">
+                    <img class="list-img__item" src="../asset/img/slider 1.png" alt="">
+                    <img class="list-img__item" src="../asset/img/slider 2.png" alt="">
+                    <img class="list-img__item" src="../asset/img/slider 3.png" alt="">
+                    <img class="list-img__item" src="../asset/img/slider 4.png" alt="">
+                </div>
+            </div>
+            <div class="collection">
+                <div class="collection__header">
+                    <div class="collection__header-item">
+                        <p class="item__first">Sản phẩm mới</p>
+                    </div>
+                    <div class="collection__header-item">
+                        <p class="item__second">Xem tất cả sản phẩm</p>
+                        <div class="item__all">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="24" viewBox="0 0 15 24" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.59994 0.0633864C2.31846 0.168293 2.09036 0.348246 1.60628 0.847043C1.03066 1.44029 0.905268 1.68831 0.936627 2.17173C0.94858 2.35581 0.995502 2.5802 1.04088 2.67043C1.0863 2.76067 3.18316 4.89648 5.70058 7.41667L10.2777 11.9988L5.69753 16.5807C0.748002 21.5321 0.926315 21.3353 0.920127 21.8539C0.913752 22.3872 1.0526 22.623 1.7995 23.3477C2.02839 23.5697 2.30997 23.7992 2.42524 23.8577C2.73546 24.0152 3.13258 24.0327 3.48128 23.9042C3.75377 23.8038 3.93358 23.6297 9.2568 18.3097C15.4481 12.1223 15.0202 12.6007 14.9793 11.9115C14.9668 11.7016 14.9238 11.4853 14.8752 11.3892C14.8297 11.299 12.3212 8.75387 9.30091 5.73343C5.31775 1.75018 3.75147 0.212871 3.59847 0.136558C3.33419 0.00479264 2.85194 -0.0305511 2.59994 0.0633864Z" fill="white"/>
+                              </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="collection__contain">
+                    <div class="contain__btn ">
+                        <div class="contain__btn--back">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="24" viewBox="0 0 16 24" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.36 23.9366C13.6415 23.8317 13.8696 23.6518 14.3537 23.153C14.9293 22.5597 15.0547 22.3117 15.0233 21.8283C15.0114 21.6442 14.9645 21.4198 14.9191 21.3296C14.8737 21.2393 12.7768 19.1035 10.2594 16.5833L5.68222 12.0012L10.2624 7.41927C15.212 2.46791 15.0336 2.66469 15.0398 2.14607C15.0462 1.61282 14.9074 1.37699 14.1605 0.652346C13.9316 0.4303 13.65 0.200752 13.5347 0.142254C13.2245 -0.0152473 12.8274 -0.032732 12.4787 0.0957527C12.2062 0.196159 12.0264 0.370346 6.70316 5.69028C0.511866 11.8777 0.939788 11.3993 0.980663 12.0885C0.993132 12.2984 1.03621 12.5147 1.08477 12.6108C1.13029 12.701 3.63876 15.2461 6.65905 18.2666C10.6422 22.2498 12.2085 23.7871 12.3615 23.8634C12.6258 23.9952 13.108 24.0306 13.36 23.9366Z" fill="white"/>
+                              </svg>
+                        </div>
+                    </div>
+                    <div class="contain__list">
+                        <div class="contain__item">
+                            <div class="contain__item-img">
+                                <img src="./asset/img/collection.img/productex1.png" alt="">
+                                <p class="add-cart">Thêm vào giỏ hàng</p>
+                                <p class="buy-now">Mua ngay</p>
+                            </div>
+                            <div class="contain__item-option">
+                                <div class="option__color">
+                                    <input type="radio" class="color" name="color" id="color1">
+                                    <input type="radio" class="color" name="color" id="color2">
+                                    <input type="radio" class="color" name="color" id="color3">
+                                    <input type="radio" class="color" name="color" id="color4">
+                                </div>
+                                <div class="option__name">
+                                    Đầm Voan Hoa Dáng Xòe
+                                </div>
+                                <div class="option__price">840.000 đ</div>
+                            </div>
+                        </div>
+                        <div class="contain__item">
+                            <div class="contain__item-img">
+                                <img src="./asset/img/collection.img/productex2.png" alt="">
+                                <p class="add-cart">Thêm vào giỏ hàng</p>
+                                <p class="buy-now">Mua ngay</p>
+                            </div>
+                            <div class="contain__item-option">
+                                <div class="option__color">
+                                    <input type="radio" class="color" name="color" id="color1">
+                                    <input type="radio" class="color" name="color" id="color2">
+                                    <input type="radio" class="color" name="color" id="color3">
+                                    <input type="radio" class="color" name="color" id="color4">
+                                </div>
+                                <div class="option__name">
+                                    Đầm Xoè Hoa Tay Lỡ
+                                </div>
+                                <div class="option__price">890.000 đ</div>
+                            </div>
+                        </div>
+                        <div class="contain__item">
+                            <div class="contain__item-img">
+                                <img src="./asset/img/collection.img/productex3.png" alt="">
+                                <p class="add-cart">Thêm vào giỏ hàng</p>
+                                <p class="buy-now">Mua ngay</p>
+                            </div>
+                            <div class="contain__item-option">
+                                <div class="option__color">
+                                    <input type="radio" class="color" name="color" id="color1">
+                                    <input type="radio" class="color" name="color" id="color2">
+                                    <input type="radio" class="color" name="color" id="color3">
+                                    <input type="radio" class="color" name="color" id="color4">
+                                </div>
+                                <div class="option__name">
+                                    Đầm Maxi Hoạ Tiết
+                                </div>
+                                <div class="option__price">840.000 đ</div>
+                            </div>
+                        </div>
+                        <div class="contain__item">
+                            <div class="contain__item-img">
+                                <img src="./asset/img/collection.img/productex4.png" alt="">
+                                <p class="add-cart">Thêm vào giỏ hàng</p>
+                                <p class="buy-now">Mua ngay</p>
+                            </div>
+                            <div class="contain__item-option">
+                                <div class="option__color">
+                                    <input type="radio" class="color" name="color" id="color1">
+                                    <input type="radio" class="color" name="color" id="color2">
+                                    <input type="radio" class="color" name="color" id="color3">
+                                    <input type="radio" class="color" name="color" id="color4">
+                                </div>
+                                <div class="option__name">
+                                    Đầm Liner Dáng Maxi
+                                </div>
+                                <div class="option__price">860.000 đ</div>
+                            </div>
+                        </div>                     
+                    </div>
+                    <div class="contain__btn ">
+                        <div class="contain__btn--next">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="24" viewBox="0 0 16 24" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.63998 0.0633864C2.35849 0.168293 2.1304 0.348246 1.64632 0.847043C1.0707 1.44029 0.945307 1.68831 0.976666 2.17173C0.988619 2.35581 1.03554 2.5802 1.08092 2.67043C1.12634 2.76067 3.2232 4.89648 5.74062 7.41667L10.3178 11.9988L5.73757 16.5807C0.788041 21.5321 0.966354 21.3353 0.960166 21.8539C0.953791 22.3872 1.09264 22.623 1.83954 23.3477C2.06843 23.5697 2.35001 23.7992 2.46528 23.8577C2.77549 24.0152 3.17262 24.0327 3.52132 23.9042C3.79381 23.8038 3.97362 23.6297 9.29684 18.3097C15.4881 12.1223 15.0602 12.6007 15.0193 11.9115C15.0069 11.7016 14.9638 11.4853 14.9152 11.3892C14.8697 11.299 12.3612 8.75387 9.34095 5.73343C5.35779 1.75018 3.79151 0.212871 3.63851 0.136558C3.37423 0.00479264 2.89198 -0.0305511 2.63998 0.0633864Z" fill="white"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="poster">
+                <div class="poster__container">
+                    <img src="./asset/img/poster/poster1.png" alt="" class="poster__img">
+                    <div class="poster__describe">new arrival</div>
+                </div>
+                <div class="poster__container">
+                    <img src="./asset/img/poster/poster2.png" alt="" class="poster__img">
+                </div>
+                <div class="poster__container">
+                    <img src="./asset/img/poster/poster3.png" alt="" class="poster__img">
+                    <div class="poster__describe">new arrival</div>
+
+                </div>
+            </div>
+            <div class="collection">
+                <div class="collection__header">
+                    <div class="collection__header-item">
+                        <p class="item__first">Bộ sưu tập</p>
+                    </div>
+                    <div class="collection__header-item">
+                        <p class="item__second">Xem tất cả sản phẩm</p>
+                        <div class="item__all">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="24" viewBox="0 0 15 24" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.59994 0.0633864C2.31846 0.168293 2.09036 0.348246 1.60628 0.847043C1.03066 1.44029 0.905268 1.68831 0.936627 2.17173C0.94858 2.35581 0.995502 2.5802 1.04088 2.67043C1.0863 2.76067 3.18316 4.89648 5.70058 7.41667L10.2777 11.9988L5.69753 16.5807C0.748002 21.5321 0.926315 21.3353 0.920127 21.8539C0.913752 22.3872 1.0526 22.623 1.7995 23.3477C2.02839 23.5697 2.30997 23.7992 2.42524 23.8577C2.73546 24.0152 3.13258 24.0327 3.48128 23.9042C3.75377 23.8038 3.93358 23.6297 9.2568 18.3097C15.4481 12.1223 15.0202 12.6007 14.9793 11.9115C14.9668 11.7016 14.9238 11.4853 14.8752 11.3892C14.8297 11.299 12.3212 8.75387 9.30091 5.73343C5.31775 1.75018 3.75147 0.212871 3.59847 0.136558C3.33419 0.00479264 2.85194 -0.0305511 2.59994 0.0633864Z" fill="white"/>
+                              </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="collection__contain">
+                    <div class="contain__btn ">
+                        <div class="contain__btn--back">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="24" viewBox="0 0 16 24" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.36 23.9366C13.6415 23.8317 13.8696 23.6518 14.3537 23.153C14.9293 22.5597 15.0547 22.3117 15.0233 21.8283C15.0114 21.6442 14.9645 21.4198 14.9191 21.3296C14.8737 21.2393 12.7768 19.1035 10.2594 16.5833L5.68222 12.0012L10.2624 7.41927C15.212 2.46791 15.0336 2.66469 15.0398 2.14607C15.0462 1.61282 14.9074 1.37699 14.1605 0.652346C13.9316 0.4303 13.65 0.200752 13.5347 0.142254C13.2245 -0.0152473 12.8274 -0.032732 12.4787 0.0957527C12.2062 0.196159 12.0264 0.370346 6.70316 5.69028C0.511866 11.8777 0.939788 11.3993 0.980663 12.0885C0.993132 12.2984 1.03621 12.5147 1.08477 12.6108C1.13029 12.701 3.63876 15.2461 6.65905 18.2666C10.6422 22.2498 12.2085 23.7871 12.3615 23.8634C12.6258 23.9952 13.108 24.0306 13.36 23.9366Z" fill="white"/>
+                              </svg>
+                        </div>
+                    </div>
+                    <div class="contain__list">
+                        <div class="contain__item">
+                            <div class="contain__item-img">
+                                <img src="./asset/img/collection_after/product1.png" alt="">
+                                <p class="add-cart">Thêm vào giỏ hàng</p>
+                                <p class="buy-now">Mua ngay</p>
+                            </div>
+                            <div class="contain__item-option">
+                                <div class="option__color">
+                                    <input type="radio" class="color" name="color" id="color1">
+                                    <input type="radio" class="color" name="color" id="color2">
+                                    <input type="radio" class="color" name="color" id="color3">
+                                    <input type="radio" class="color" name="color" id="color4">
+                                </div>
+                                <div class="option__name">
+                                    Đầm Voan Hoa Dáng Xòe
+                                </div>
+                                <div class="option__price">840.000 đ</div>
+                            </div>
+                        </div>
+                        <div class="contain__item">
+                            <div class="contain__item-img">
+                                <img src="./asset/img/collection_after/product2.png" alt="">
+                                <p class="add-cart">Thêm vào giỏ hàng</p>
+                                <p class="buy-now">Mua ngay</p>
+                            </div>
+                            <div class="contain__item-option">
+                                <div class="option__color">
+                                    <input type="radio" class="color" name="color" id="color1">
+                                    <input type="radio" class="color" name="color" id="color2">
+                                    <input type="radio" class="color" name="color" id="color3">
+                                    <input type="radio" class="color" name="color" id="color4">
+                                </div>
+                                <div class="option__name">
+                                    Đầm Xoè Hoa Tay Lỡ
+                                </div>
+                                <div class="option__price">890.000 đ</div>
+                            </div>
+                        </div>
+                        <div class="contain__item">
+                            <div class="contain__item-img">
+                                <img src="./asset/img/collection_after/product3.png" alt="">
+                                <p class="add-cart">Thêm vào giỏ hàng</p>
+                                <p class="buy-now">Mua ngay</p>
+                            </div>
+                            <div class="contain__item-option">
+                                <div class="option__color">
+                                    <input type="radio" class="color" name="color" id="color1">
+                                    <input type="radio" class="color" name="color" id="color2">
+                                    <input type="radio" class="color" name="color" id="color3">
+                                    <input type="radio" class="color" name="color" id="color4">
+                                </div>
+                                <div class="option__name">
+                                    Đầm Maxi Hoạ Tiết
+                                </div>
+                                <div class="option__price">840.000 đ</div>
+                            </div>
+                        </div>
+                        <div class="contain__item">
+                            <div class="contain__item-img">
+                                <img src="./asset/img/collection_after/product4.png" alt="">
+                                <p class="add-cart">Thêm vào giỏ hàng</p>
+                                <p class="buy-now">Mua ngay</p>
+                            </div>
+                            <div class="contain__item-option">
+                                <div class="option__color">
+                                    <input type="radio" class="color" name="color" id="color1">
+                                    <input type="radio" class="color" name="color" id="color2">
+                                    <input type="radio" class="color" name="color" id="color3">
+                                    <input type="radio" class="color" name="color" id="color4">
+                                </div>
+                                <div class="option__name">
+                                    Đầm Liner Dáng Maxi
+                                </div>
+                                <div class="option__price">860.000 đ</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contain__btn ">
+                        <div class="contain__btn--next">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="24" viewBox="0 0 16 24" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.63998 0.0633864C2.35849 0.168293 2.1304 0.348246 1.64632 0.847043C1.0707 1.44029 0.945307 1.68831 0.976666 2.17173C0.988619 2.35581 1.03554 2.5802 1.08092 2.67043C1.12634 2.76067 3.2232 4.89648 5.74062 7.41667L10.3178 11.9988L5.73757 16.5807C0.788041 21.5321 0.966354 21.3353 0.960166 21.8539C0.953791 22.3872 1.09264 22.623 1.83954 23.3477C2.06843 23.5697 2.35001 23.7992 2.46528 23.8577C2.77549 24.0152 3.17262 24.0327 3.52132 23.9042C3.79381 23.8038 3.97362 23.6297 9.29684 18.3097C15.4881 12.1223 15.0602 12.6007 15.0193 11.9115C15.0069 11.7016 14.9638 11.4853 14.9152 11.3892C14.8697 11.299 12.3612 8.75387 9.34095 5.73343C5.35779 1.75018 3.79151 0.212871 3.63851 0.136558C3.37423 0.00479264 2.89198 -0.0305511 2.63998 0.0633864Z" fill="white"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider slider__bottom">
+                <img src="./asset/img/slider/slider_after.png" alt="">
+            </div>
+        </div>
+        <div class="content content__complement close-motion">
+            <div class="content__register close-motion">
+                <div class="register__title">Đăng kí tài khoản</div>
+                <div class="register__list">
+                    <div class="list__contain">
+                        <label for="ho" class="list__label">Họ</label>
+                        <label class="list__rule">*</label>
+                        <input class="list__input" type="text" id="ho" name="ho" placeholder="Họ" required>
+                    </div>
+                </div>
+                <div class="register__list">
+                    <div class="list__contain">
+                        <label for="ten" class="list__label">Tên</label>
+                        <label class="list__rule">*</label>
+                        <input class="list__input" type="text" id="ten" name="ten" placeholder="Tên" required>
+                    </div>
+
+                    </div>
+                <div class="register__list">
+                    <div class="register__item">
+                        <div class="list__contain">
+                            <label for="gt" class="list__label">Giới tính</label>
+                            <label class="list__rule">*</label>
+                            <select name="gt" id="gt" class="list__input">
+                                <option value="Nam">Nam</option>
+                                <option value="Nu">Nữ</option>
+                                <option value="None">Chưa xác định</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="register__item">
+                        <div class="list__contain">
+                            <label for="ns" class="list__label">Ngày sinh</label>
+                            <label class="list__rule">*</label>
+                            <input class="list__input" type="date" id="ten" name="ns" placeholder="Ngày sinh" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="register__list">
+                    <div class="register__item">
+                        <div class="list__contain">
+                            <label for="local" class="list__label">Tỉnh/Thành phố</label>
+                            <label class="list__rule">*</label>
+                            <select name="local" id="local" class="list__input">
+                                <option value="tinh1">Hà Nội</option>
+                                <option value="tinh2">Thanh Hóa</option>
+                                <option value="tinh3">Thành phố HCM</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="register__item">
+                        <div class="list__contain">
+                            <label for="huyen" class="list__label">Quận/Huyện</label>
+                            <label class="list__rule">*</label>
+                            <select name="huyen" id="huyen" class="list__input">
+                                <option value="tinh1">Hà Đông</option>
+                                <option value="tinh2">Quảng Xương</option>
+                                <option value="tinh3">Quận 1</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="register__item">
+                        <div class="list__contain">
+                            <label for="xa" class="list__label">Xã/Phường</label>
+                            <label class="list__rule">*</label>
+                            <select name="xa" id="xa" class="list__input">
+                                <option value="tinh1">Yết Kiêu</option>
+                                <option value="tinh2">Quảng Ninh</option>
+                                <option value="tinh3">Thạch Thất</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="register__list">
+                    <div class="list__contain">
+                        <label for="dia chi" class="list__label">Địa chỉ</label>
+                        <label class="list__rule">*</label>
+                        <input class="list__input" type="text" id="diachi" name="diachi" placeholder="Địa chỉ" required>
+                    </div>
+                </div>
+                <div class="register__list">
+                    <div class="list__contain">
+                        <label for="email" class="list__label">Email</label>
+                        <label class="list__rule">*</label>
+                        <input class="list__input" type="email" id="email" name="email" placeholder="Email" required>
+                    </div>
+                </div>
+                <div class="register__list">
+                    <div class="list__contain">
+                        <label for="password" class="list__label">Mật khẩu</label>
+                        <label class="list__rule">*</label>
+                        <input class="list__input" type="password" id="password" name="password" placeholder="Mật khẩu bao gồm 8 kí tự chữ và số" required>
+                    </div>
+                </div>
+                <div class="register__list">
+                    <div class="list__contain">
+                        <label for="password2" class="list__label">Nhập lại mật khẩu</label>
+                        <label class="list__rule">*</label>
+                        <input class="list__input" type="password" id="password2" name="password" placeholder="Nhập lại mật khẩu" required>
+                    </div>
+                </div>
+                <div class="register__list">
+                    <div class="list__contain">
+                        <div class="list__contain--submit">Đăng ký ngay</div>
+                    </div>
+                </div>
+                <div class="register__list">
+                    <div class="list__decribe">
+                        <p class="register__list-decribe">Bạn đã có tài khoản?</p>
+                        <p class="next__login">Đăng nhập ngay</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M15.7071 8.70711C16.0976 8.31658 16.0976 7.68342 15.7071 7.29289L9.34315 0.928932C8.95262 0.538408 8.31946 0.538408 7.92893 0.928932C7.53841 1.31946 7.53841 1.95262 7.92893 2.34315L13.5858 8L7.92893 13.6569C7.53841 14.0474 7.53841 14.6805 7.92893 15.0711C8.31946 15.4616 8.95262 15.4616 9.34315 15.0711L15.7071 8.70711ZM0 9H15V7H0V9Z" fill="#4676F4"/>
+                          </svg>
+                    </div>
+                </div>
+                <div class="register__list">
+                    <div class="list__option">
+                        <span></span>
+                        <p>Hoặc đăng nhập với</p>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="register__list">
+                    <div class="list__select">
+                        <div class="list__select-logo">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <g clip-path="url(#clip0_2022_4192)">
+                                  <path d="M31.9827 16.2994C31.9827 14.9884 31.8739 14.0317 31.6383 13.0396H16.3184V18.9569H25.3108C25.1296 20.4274 24.1506 22.642 21.9749 24.1301L21.9444 24.3282L26.7883 27.9952L27.1239 28.0279C30.2059 25.2463 31.9827 21.1537 31.9827 16.2994Z" fill="#4285F4"/>
+                                  <path d="M16.3188 31.8902C20.7244 31.8902 24.4228 30.4728 27.1243 28.028L21.9753 24.1302C20.5975 25.0692 18.7482 25.7247 16.3188 25.7247C12.0039 25.7247 8.34163 22.9433 7.03614 19.0988L6.84479 19.1146L1.80806 22.9237L1.74219 23.1027C4.42541 28.3113 9.93697 31.8902 16.3188 31.8902Z" fill="#34A853"/>
+                                  <path d="M7.03635 19.0987C6.69189 18.1066 6.49253 17.0435 6.49253 15.9451C6.49253 14.8466 6.69189 13.7837 7.01823 12.7915L7.00911 12.5803L1.90926 8.70996L1.7424 8.78752C0.636513 10.949 0.00195312 13.3762 0.00195312 15.9451C0.00195312 18.5141 0.636513 20.9412 1.7424 23.1026L7.03635 19.0987Z" fill="#FBBC05"/>
+                                  <path d="M16.3188 6.16537C19.3827 6.16537 21.4495 7.45869 22.628 8.53948L27.2331 4.14571C24.4048 1.57679 20.7244 0 16.3188 0C9.93697 0 4.42541 3.57875 1.74219 8.78742L7.01802 12.7915C8.34163 8.94693 12.0039 6.16537 16.3188 6.16537Z" fill="#EB4335"/>
+                                </g>
+                                <defs>
+                                  <clipPath id="clip0_2022_4192">
+                                    <rect width="32" height="32" fill="white"/>
+                                  </clipPath>
+                                </defs>
+                              </svg>
+                        </div>
+                        <div class="list__select-social">Google</div>
+                    </div>
+                </div>
+                <div class="register__list">
+                    <div class="list__select">
+                        <div class="list__select-logo">
+                            <img src="./asset/img/footer__social/face__logo.png" alt="">
+                        </div>
+                        <div class="list__select-social">Facebook</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="content__login close-motion">
+                <div class="login__title">Đăng nhập</div>
+                <div class="login__title-add">Đăng nhập vào tài khoản của bạn để tiếp tục sử dụng</div>
+                <div class="login__list">
+                    <div class="list__contain">
+                        <label for="email" class="list__label">Email đăng nhập</label>
+                        <label class="list__rule">*</label>
+                        <input class="list__input" type="email" id="email3" name="email2" placeholder="Tên đăng nhập" required>
+                    </div>
+                </div>
+                <div class="login__list">
+                    <div class="list__contain">
+                        <label for="password" class="list__label">Mật khẩu</label>
+                        <label class="list__rule">*</label>
+                        <input class="list__input" type="password" id="password3" name="password2" placeholder="Nhập mật khẩu" required>
+                    </div>
+                </div>
+                <div class="login__list">
+                    <div class="list__checked">
+                        <div class="list__checked-item">
+                            <input type="checkbox" class="list__checked-checked">
+                            <div class="list__checked-title">Lưu thông tin đăng nhập</div>
+                        </div>
+                        <div class="list__checked-item">
+                            <div class="forget__password">Quên mật khẩu?</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="login__list">
+                    <div class="list__contain">
+                        <div class="list__contain--submit">Đăng nhập</div>
+                    </div>
+                </div>
+                <div class="login__list">
+                    <div class="list__decribe">
+                        <p class="login__list-decribe">Bạn chưa có tài khoản?</p>
+                        <p class="next__register">Đăng kí ngay</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M15.7071 8.70711C16.0976 8.31658 16.0976 7.68342 15.7071 7.29289L9.34315 0.928932C8.95262 0.538408 8.31946 0.538408 7.92893 0.928932C7.53841 1.31946 7.53841 1.95262 7.92893 2.34315L13.5858 8L7.92893 13.6569C7.53841 14.0474 7.53841 14.6805 7.92893 15.0711C8.31946 15.4616 8.95262 15.4616 9.34315 15.0711L15.7071 8.70711ZM0 9H15V7H0V9Z" fill="#4676F4"/>
+                          </svg>
+                    </div>
+                </div>
+                <div class="login__list">
+                    <div class="list__option">
+                        <span></span>
+                        <p>Hoặc đăng nhập với</p>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="login__list">
+                    <div class="list__select">
+                        <div class="list__select-logo">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <g clip-path="url(#clip0_2022_4192)">
+                                  <path d="M31.9827 16.2994C31.9827 14.9884 31.8739 14.0317 31.6383 13.0396H16.3184V18.9569H25.3108C25.1296 20.4274 24.1506 22.642 21.9749 24.1301L21.9444 24.3282L26.7883 27.9952L27.1239 28.0279C30.2059 25.2463 31.9827 21.1537 31.9827 16.2994Z" fill="#4285F4"/>
+                                  <path d="M16.3188 31.8902C20.7244 31.8902 24.4228 30.4728 27.1243 28.028L21.9753 24.1302C20.5975 25.0692 18.7482 25.7247 16.3188 25.7247C12.0039 25.7247 8.34163 22.9433 7.03614 19.0988L6.84479 19.1146L1.80806 22.9237L1.74219 23.1027C4.42541 28.3113 9.93697 31.8902 16.3188 31.8902Z" fill="#34A853"/>
+                                  <path d="M7.03635 19.0987C6.69189 18.1066 6.49253 17.0435 6.49253 15.9451C6.49253 14.8466 6.69189 13.7837 7.01823 12.7915L7.00911 12.5803L1.90926 8.70996L1.7424 8.78752C0.636513 10.949 0.00195312 13.3762 0.00195312 15.9451C0.00195312 18.5141 0.636513 20.9412 1.7424 23.1026L7.03635 19.0987Z" fill="#FBBC05"/>
+                                  <path d="M16.3188 6.16537C19.3827 6.16537 21.4495 7.45869 22.628 8.53948L27.2331 4.14571C24.4048 1.57679 20.7244 0 16.3188 0C9.93697 0 4.42541 3.57875 1.74219 8.78742L7.01802 12.7915C8.34163 8.94693 12.0039 6.16537 16.3188 6.16537Z" fill="#EB4335"/>
+                                </g>
+                                <defs>
+                                  <clipPath id="clip0_2022_4192">
+                                    <rect width="32" height="32" fill="white"/>
+                                  </clipPath>
+                                </defs>
+                              </svg>
+                        </div>
+                        <div class="list__select-social">Google</div>
+                    </div>
+                </div>
+                <div class="register__list">
+                    <div class="list__select">
+                        <div class="list__select-logo">
+                            <img src="./asset/img/footer__social/face__logo.png" alt="">
+                        </div>
+                        <div class="list__select-social">Facebook</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="information">
+                <div class="information__logo">
+                    <img src="./asset/img/ichi footer.png" alt="">
+                </div>
+                <h3>Liên Hệ</h3>
+                <div class="information__address information__item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                        <path d="M9.71875 20.1094C9.09375 19.1979 8.38411 18.1693 7.58984 17.0234C6.79557 15.8776 6.22917 15.0703 5.89062 14.6016C5.55208 14.1328 5.16146 13.5534 4.71875 12.8633C4.27604 12.1732 3.98307 11.6849 3.83984 11.3984C3.69661 11.112 3.54036 10.7474 3.37109 10.3047C3.20182 9.86198 3.09766 9.47786 3.05859 9.15234C3.01953 8.82682 3 8.44271 3 8C3 5.91667 3.72917 4.14583 5.1875 2.6875C6.64583 1.22917 8.41667 0.5 10.5 0.5C12.5833 0.5 14.3542 1.22917 15.8125 2.6875C17.2708 4.14583 18 5.91667 18 8C18 8.44271 17.9805 8.82682 17.9414 9.15234C17.9023 9.47786 17.7982 9.86198 17.6289 10.3047C17.4596 10.7474 17.3034 11.112 17.1602 11.3984C17.0169 11.6849 16.724 12.1732 16.2812 12.8633C15.8385 13.5534 15.4479 14.1328 15.1094 14.6016C14.7708 15.0703 14.2044 15.8776 13.4102 17.0234C12.6159 18.1693 11.9062 19.1979 11.2812 20.1094C11.099 20.3698 10.8385 20.5 10.5 20.5C10.1615 20.5 9.90104 20.3698 9.71875 20.1094ZM8.29297 10.207C8.29297 10.207 8.44596 10.36 8.75195 10.666C9.05794 10.972 9.64062 11.125 10.5 11.125C11.3594 11.125 12.0951 10.819 12.707 10.207C13.319 9.59505 13.625 8.85938 13.625 8C13.625 7.14062 13.319 6.40495 12.707 5.79297C12.0951 5.18099 11.3594 4.875 10.5 4.875C9.64062 4.875 8.90495 5.18099 8.29297 5.79297C7.68099 6.40495 7.375 7.14062 7.375 8C7.375 8.85938 7.68099 9.59505 8.29297 10.207Z" fill="white"/>
+                      </svg>
+                    <p>Địa chỉ, Địa chỉ, Hà Nội, Việt Nam</p>
+                </div>
+                <div class="information__email information__item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M1.36546 20H4.55154V9.6323L0 5.02441V18.1641C0 19.1721 0.615797 20 1.36546 20Z" fill="white"/>
+                        <path d="M15.4482 20H18.6343C19.384 20 19.9998 19.1721 19.9998 18.1641V5.02441L15.4482 9.5963" fill="white"/>
+                        <path d="M15.4482 1.85567V9.81147L19.9998 5.23958V2.75565C19.9998 0.487704 18.0721 -0.808263 16.7334 0.559702" fill="white"/>
+                        <path d="M4.55176 9.81127V1.85547L10.0136 7.36333L15.4487 1.85547V9.81127L9.98683 15.2831" fill="white"/>
+                        <path d="M0 2.75584V5.20377L4.55154 9.77566V1.85586L3.2664 0.559893C1.92771 -0.772073 0 0.523894 0 2.75584Z" fill="white"/>
+                      </svg>
+                    <p>ichiclothing@gmail.com</p>
+                </div>
+                <div class="information__hotline information__item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                        <path d="M17.3087 16.7748C17.3087 17.0748 17.242 17.3832 17.1003 17.6832C16.9587 17.9832 16.7753 18.2665 16.5337 18.5332C16.1253 18.9832 15.6753 19.3082 15.167 19.5165C14.667 19.7248 14.1253 19.8332 13.542 19.8332C12.692 19.8332 11.7837 19.6332 10.8253 19.2248C9.86699 18.8165 8.90866 18.2665 7.95866 17.5748C7.00033 16.8748 6.09199 16.0998 5.22533 15.2415C4.36699 14.3748 3.59199 13.4665 2.90033 12.5165C2.21699 11.5665 1.66699 10.6165 1.26699 9.67484C0.866992 8.72484 0.666992 7.8165 0.666992 6.94984C0.666992 6.38317 0.766992 5.8415 0.966992 5.3415C1.16699 4.83317 1.48366 4.3665 1.92533 3.94984C2.45866 3.42484 3.04199 3.1665 3.65866 3.1665C3.89199 3.1665 4.12533 3.2165 4.33366 3.3165C4.55033 3.4165 4.74199 3.5665 4.89199 3.78317L6.82533 6.50817C6.97533 6.7165 7.08366 6.90817 7.15866 7.0915C7.23366 7.2665 7.27533 7.4415 7.27533 7.59984C7.27533 7.79984 7.21699 7.99984 7.10033 8.1915C6.99199 8.38317 6.83366 8.58317 6.63366 8.78317L6.00033 9.4415C5.90866 9.53317 5.86699 9.6415 5.86699 9.77484C5.86699 9.8415 5.87533 9.89984 5.89199 9.9665C5.91699 10.0332 5.94199 10.0832 5.95866 10.1332C6.10866 10.4082 6.36699 10.7665 6.73366 11.1998C7.10866 11.6332 7.50866 12.0748 7.94199 12.5165C8.39199 12.9582 8.82533 13.3665 9.26699 13.7415C9.70033 14.1082 10.0587 14.3582 10.342 14.5082C10.3837 14.5248 10.4337 14.5498 10.492 14.5748C10.5587 14.5998 10.6253 14.6082 10.7003 14.6082C10.842 14.6082 10.9503 14.5582 11.042 14.4665L11.6753 13.8415C11.8837 13.6332 12.0837 13.4748 12.2753 13.3748C12.467 13.2582 12.6587 13.1998 12.867 13.1998C13.0253 13.1998 13.192 13.2332 13.3753 13.3082C13.5587 13.3832 13.7503 13.4915 13.9587 13.6332L16.717 15.5915C16.9337 15.7415 17.0837 15.9165 17.1753 16.1248C17.2587 16.3332 17.3087 16.5415 17.3087 16.7748Z" stroke="white" stroke-width="1.2" stroke-miterlimit="10"/>
+                        <path d="M14.4167 8.99967C14.4167 8.49967 14.025 7.73301 13.4417 7.10801C12.9083 6.53301 12.2 6.08301 11.5 6.08301" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M17.3333 8.99984C17.3333 5.77484 14.725 3.1665 11.5 3.1665" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    <p>Hotline : 0902237086</p>
+                </div>
+
+                <div class="information__list">
+                    <div class="information__title">Trang chủ</div>
+                    <div class="information__title">Áo</div>
+                    <div class="information__title">Quần</div>
+                    <div class="information__title">Bộ sưu tập</div>
+                    <div class="information__title">Giảm giá</div>
+                </div>
+            </div>
+            <div class="support">
+                <p class="support__contact">Liên hệ tư vấn</p>
+                <form action="">
+                    <div class="contact__row1">
+                        <input type="text" placeholder="Họ và tên" class="form__contact" required>
+                        <input type="number" placeholder="Số điện thoại" class="form__contact">
+                        <input type="email" placeholder="Email" class="form__contact">
+                    </div>
+                    <div class="contact__row2">
+                        <input type="text" placeholder="Nội dung tư vấn" class="form__content">
+                    </div>
+                    <div class="contact__row3">
+                        <input type="submit" value="Gửi yêu cầu" class="form__send">
+                    </div>
+                </form>
+                <div class="support__title">Theo dõi ICHI trên các nền tảng khác nhé!</div>
+                <div class="social__list">
+                    <div class="social__item-around">
+                        <a href="https://www.facebook.com/profile.php?id=100016715589670" class="social__item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
+                                <g clip-path="url(#clip0_4194_1549)">
+                                  <path d="M43.5 22C43.5 10.1258 33.8741 0.499954 22 0.499954C10.1259 0.499954 0.5 10.1258 0.5 22C0.5 32.7312 8.36224 41.6258 18.6406 43.2388V28.2148H13.1816V22H18.6406V17.2632C18.6406 11.8748 21.8504 8.8984 26.7615 8.8984C29.1138 8.8984 31.5742 9.31832 31.5742 9.31832V14.6093H28.8631C26.1923 14.6093 25.3594 16.2666 25.3594 17.9669V22H31.3223L30.369 28.2148H25.3594V43.2388C35.6378 41.6258 43.5 32.7312 43.5 22Z" fill="#1877F2"/>
+                                  <path d="M30.369 28.2148L31.3223 22H25.3594V17.9669C25.3594 16.2667 26.1923 14.6094 28.8631 14.6094H31.5742V9.31836C31.5742 9.31836 29.1138 8.89844 26.7615 8.89844C21.8504 8.89844 18.6406 11.8748 18.6406 17.2633V22H13.1816V28.2148H18.6406V43.2388C19.7352 43.4106 20.8571 43.5 22 43.5C23.1429 43.5 24.2648 43.4106 25.3594 43.2388V28.2148H30.369Z" fill="white"/>
+                                </g>
+                                <defs>
+                                  <clipPath id="clip0_4194_1549">
+                                    <rect width="43" height="43" fill="white" transform="translate(0.5 0.5)"/>
+                                  </clipPath>
+                                </defs>
+                              </svg>
+                        </a>
+                    </div>
+                    <div class="social__item-around">
+                        <a href="" class="social__item">
+                            <img src="./asset/img/footer__social/messenger.png" alt="">
+                        </a>
+                    </div>
+                    <div class="social__item-around">
+                        <a href="" class="social__item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="41" height="30" viewBox="0 0 41 30" fill="none">
+                                <path d="M39.6641 5.34295C39.2041 3.61662 37.8489 2.25722 36.1277 1.79585C33.0084 0.957373 20.5 0.957373 20.5 0.957373C20.5 0.957373 7.99166 0.957373 4.87225 1.79585C3.15127 2.25722 1.79581 3.61662 1.33585 5.34295C0.5 8.47179 0.5 14.9999 0.5 14.9999C0.5 14.9999 0.5 21.528 1.33585 24.6571C1.79581 26.3832 3.15127 27.7426 4.87225 28.2042C7.99166 29.0425 20.5 29.0425 20.5 29.0425C20.5 29.0425 33.0084 29.0425 36.1277 28.2042C37.8489 27.7426 39.2041 26.3832 39.6641 24.6571C40.5 21.528 40.5 14.9999 40.5 14.9999C40.5 14.9999 40.5 8.47179 39.6641 5.34295Z" fill="#ED1D24"/>
+                                <path d="M16.4102 20.9268L26.8647 15L16.4102 9.07269V20.9268Z" fill="white"/>
+                              </svg>
+                        </a>
+                    </div>
+                    <div class="social__item-around">
+                        <a href="" class="social__item">
+                           <img src="./asset/img/footer__social/insta_logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="social__item-around">
+                        <a href="" class="social__item">
+                            <img src="./asset/img/footer__social/tiktok.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="modal__product close-motion">
+        <div class="modal__product-content">
+            <div class="product__image">
+                <div class="product__image__list">
+                    <div><img src="./asset/img/modal__product/modal1.png" alt="" class="product__image-item active"></div>
+                    <div><img src="./asset/img/modal__product/modal2.png" alt="" class="product__image-item"></div>
+                    <div><img src="./asset/img/modal__product/modal3.png" alt="" class="product__image-item"></div>
+                    <div><img src="./asset/img/modal__product/modal4.png" alt="" class="product__image-item"></div>
+                </div>
+                <div class="product__image__main">
+                    <div class="control control__prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="18" viewBox="0 0 10 18" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.80683 17.4776C9.00674 17.4031 9.16874 17.2753 9.51254 16.921C9.92135 16.4997 10.0104 16.3235 9.98814 15.9802C9.97965 15.8495 9.94632 15.6901 9.9141 15.626C9.88184 15.5619 8.39262 14.045 6.60471 12.2552L3.35394 9.00087L6.60687 5.74671C10.1221 2.23019 9.99546 2.36994 9.99985 2.00161C10.0044 1.62289 9.90577 1.45539 9.37531 0.940744C9.21275 0.783045 9.01277 0.620018 8.9309 0.57847C8.71058 0.46661 8.42854 0.454193 8.18088 0.545444C7.98736 0.616755 7.85966 0.740465 4.07903 4.51876C-0.318123 8.91315 -0.014205 8.57338 0.0148249 9.06286C0.0236807 9.21194 0.0542746 9.36555 0.0887642 9.43383C0.12109 9.49791 1.90264 11.3055 4.0477 13.4506C6.8766 16.2796 7.98899 17.3714 8.09766 17.4256C8.28535 17.5192 8.62785 17.5443 8.80683 17.4776Z" fill="white"/>
+                          </svg>
+                    </div>
+                    <img src="./asset/img/modal__product/modal1.png" alt="" class="main__img">
+                    <div class="control control__next">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="18" viewBox="0 0 10 18" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.19317 0.522425C0.993259 0.596931 0.831263 0.724737 0.487464 1.07899C0.0786467 1.50032 -0.0104077 1.67647 0.0118642 2.0198C0.0203535 2.15054 0.0536783 2.3099 0.0859043 2.37399C0.118164 2.43807 1.60738 3.95496 3.39529 5.74483L6.64606 8.99913L3.39313 12.2533C-0.1221 15.7698 0.00454022 15.6301 0.000145764 15.9984C-0.00438186 16.3771 0.0942271 16.5446 0.624691 17.0593C0.787252 17.217 0.987233 17.38 1.0691 17.4215C1.28942 17.5334 1.57146 17.5458 1.81912 17.4546C2.01264 17.3832 2.14034 17.2595 5.92097 13.4812C10.3181 9.08685 10.0142 9.42662 9.98518 8.93714C9.97632 8.78806 9.94573 8.63445 9.91124 8.56617C9.87891 8.50209 8.09736 6.69454 5.9523 4.54938C3.1234 1.72041 2.01101 0.628591 1.90234 0.574393C1.71465 0.480811 1.37215 0.45571 1.19317 0.522425Z" fill="white"/>
+                          </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="product__infor">
+                <div class="product__infor-name">Set Áo Kiểu Kèm Chân Váy</div>
+                <div class="product__infor-index">Mã sản phẩm: 001</div>
+                <div class="product__infor-price">240.000đ</div>
+                <div class="product__infor-color">
+                    <p>màu sắc</p>
+                    <div class="option__color">
+                        <input type="radio" class="color color__product" name="color " id="color1">
+                        <input type="radio" class="color color__product" name="color" id="color2">
+                        <input type="radio" class="color color__product" name="color" id="color3">
+                        <input type="radio" class="color color__product" name="color" id="color4">
+                    </div>
+                </div>
+                <div class="product__infor-size">
+                    <p>kích thước</p>
+                    <div class="size-options">
+                        <input type="radio" id="size-s" name="size" value="S" class="size-option">
+                        <label for="size-s">S</label>
+                        
+                        <input type="radio" id="size-m" name="size" value="M" class="size-option">
+                        <label for="size-m">M</label>
+                        
+                        <input type="radio" id="size-l" name="size" value="L" class="size-option">
+                        <label for="size-l">L</label>
+                        
+                        <input type="radio" id="size-xl" name="size" value="XL" class="size-option">
+                        <label for="size-xl">XL</label>
+                    </div>                    
+                </div>
+                <div class="product__infor-submit content--add close-motion">THÊM VÀO GIỎ</div>
+                <div class="product__infor-submit content--buy close-motion">MUA NGAY</div>
+            </div>
+            <div class="product__close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.84443 0.0454648C1.48994 0.129808 1.06212 0.376812 0.78631 0.656358C0.0909619 1.36113 -0.0852036 2.39919 0.339906 3.28697C0.491266 3.60309 0.728415 3.85285 4.62072 7.79547L8.74132 11.9694L4.56128 16.2155C0.718727 20.119 0.369579 20.4867 0.236378 20.7701C-0.1965 21.6911 -0.0242664 22.7597 0.666402 23.4382C1.27582 24.0369 2.54436 24.1717 3.41939 23.7308C3.61596 23.6318 4.47577 22.7859 7.78323 19.4374C10.0487 17.1439 11.9229 15.2674 11.9483 15.2674C11.9737 15.2674 13.8479 17.1439 16.1134 19.4374C20.5287 23.9075 20.3816 23.7728 21.0154 23.9243C22.1388 24.1928 23.2346 23.7312 23.6968 22.795C23.787 22.6121 23.8739 22.3805 23.8896 22.2803C23.9054 22.1803 23.9367 22.0983 23.9592 22.0983C23.9817 22.0983 24 21.9489 24 21.7663C24 21.5836 23.9817 21.4342 23.9592 21.4342C23.9367 21.4342 23.9042 21.3446 23.8869 21.2351C23.8697 21.1255 23.7912 20.896 23.7126 20.7251C23.5791 20.4346 23.2959 20.1382 19.3737 16.1841L15.1777 11.9539L19.2801 7.78774C21.934 5.09275 23.4154 3.55466 23.4755 3.43189C23.8343 2.69923 23.8006 1.76847 23.3916 1.11507C22.8716 0.284452 21.8328 -0.137926 20.9172 0.109078C20.2816 0.280515 20.4238 0.150063 16.0435 4.57778L11.9483 8.71736L7.82965 4.55539C3.42921 0.108698 3.56335 0.231797 2.93264 0.0616408C2.65449 -0.0134045 2.12496 -0.021279 1.84443 0.0454648ZM0.00592134 21.8137C0.00592134 22.0094 0.0142054 22.0895 0.024268 21.9916C0.0343774 21.8938 0.0343774 21.7337 0.024268 21.6358C0.0142054 21.538 0.00592134 21.618 0.00592134 21.8137Z" fill="white"/>
+                  </svg>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./asset/javascript/motion.js"></script>
+</html>

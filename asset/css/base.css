@@ -1,0 +1,71 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+}
+
+* {
+    box-sizing: inherit;
+}
+html {
+    font-size: 62.5%;
+    line-height: 150%;
+    font-family: SVN-Gilroy;
+    box-sizing: border-box;
+}
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.grid__full-width {
+    width: 100%;
+}
+.grid__thir-width {
+    width: calc(100%/3);
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@keyframes slider {
+    from {
+        transform: translateX(2%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes complement {
+    from {
+        opacity: 0;
+        transform: translateX(90px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes modal {
+    from {
+        opacity: 0.9;
+        transform: translateY(90px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.open-motion {
+    display: flex !important;
+}
+.close-motion {
+    display: none !important;
+}
+.active {
+    filter: brightness(0.5) !important;
+}
