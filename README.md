@@ -1,7 +1,7 @@
 ## 🔧 Cách chạy dự án
 1. **Clone repository**  
    ```bash
-   git clone https://github.com/your-repo.git
+   git clone https://github.com/nhatzonz/Ichi_Store.git
    
 ## 📂 Cấu trúc thư mục
 Ichi_store /
